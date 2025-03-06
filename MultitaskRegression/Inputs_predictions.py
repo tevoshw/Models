@@ -27,5 +27,5 @@ user_inputs = torch.tensor([age, imc, exercises_per_week], dtype= torch.float32)
 loaded_model.eval()
 with torch.inference_mode():
     y_preds_input = loaded_model(user_inputs)
-    print(f"A prediçõa de precipitação é: {y_preds_input[0].item():.2f}%")
+    print(f"A predição de precipitação é: {y_preds_input[0].item():.2f}%")
     print(f"A predição da velocidade do vento em rajada é de: {y_preds_input[1].item():.2f}%")
